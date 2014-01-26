@@ -1,0 +1,24 @@
+name:                corebot
+version:             0.0.0
+synopsis:            Bot that spits out core.
+description:         Bot that spits out core.
+license:             BSD3
+license-file:        LICENSE
+author:              Chris Done
+maintainer:          chrisdone@gmail.com
+copyright:           2014 Chris Done
+category:            Development
+build-type:          Simple
+cabal-version:       >=1.8
+
+library
+  hs-source-dirs:    src/
+  ghc-options:       -Wall -O2
+  exposed-modules:   Corebot
+  build-depends:     base >= 4 && <5
+
+executable corebot
+  hs-source-dirs:    src/
+  ghc-options:       -Wall -O2
+  main-is:           Main.hs
+  build-depends:     base >= 4 && < 5
